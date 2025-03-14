@@ -7,19 +7,97 @@ header {
 }
 
 article h1, article h2 {
-    background-color: rgb(33,28,83);
-    color:rgb(255,255,255);
+    background-color: rgb(0,0,139);
+    color:rgb(211,211,211);
 }
 
 body {
-    background-color:rgb(138,145,188);
+    background-color:rgb(24,62,186);
+    color: white;
 }
 
 nav > ul {
     list-style-type: none;
+    text-align: center;
+    color: rgb(211,211,211);
+}
+
+nav > ul > li > a:link, nav > ul > li > a:visited { 
+    color: rgb(211,211,211); 
+    text-decoration: none; 
+}
+
+nav > ul > li > a:hover, nav > ul > li > a:active { 
+    color: rgb(0,0,139); 
+    text-decoration: underline; 
+}
+
+article > p > a:link, article > p > a:visited { 
+    color: rgb(151, 151, 151); 
+    text-decoration: none; 
 }
 
 footer {
     font-family: monospace;
     font-size: 1.5em;
+    clear: left;
+}
+
+body > header > img { 
+    display: block; 
+    width: 100%; 
+}
+
+footer > a:link, footer > a:visited {
+    color: rgb(151,151,151)
+}
+
+body { 
+    margin-left: auto; 
+    margin-right: auto;
+    max-width: 1080px; 
+    min-width: 630px; 
+}
+
+nav.horizontalNavigation a {
+    display: block;
+}
+
+nav.horizontalNavigation a:hover {
+    background-color: rgb(211,211,211);
+}
+
+nav.horizontalNavigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0,0,139);
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+  
+li a {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+section#leftColumn { 
+    clear: left; 
+    float: left; 
+    width: 50%;
+    padding: 1.5em; 
+}
+
+figcaption { 
+    clear: right; 
+    float: right; 
+    width: 50%; 
 }
